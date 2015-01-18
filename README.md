@@ -48,9 +48,13 @@
 * Elasticsearch
 * JS API for developers to account for 
 * Sign in to services like amazon & netflix & spotify & pandora
+* No login or username creation like SONOS
 
 ## Random Thoughts
 
 * Signed About Screen with sigs of all developers
 * Pair up controllers
-* 
+* Controllers can be metamorphic, driven by developers (since there are no physical buttons, it has a mic, touch, etc)
+* Auto-tune for karaoke with phone mic.
+
+
