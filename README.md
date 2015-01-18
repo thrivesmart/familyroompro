@@ -17,3 +17,40 @@
 * Appertainment (Single-user, 1–1, 1-many)
 * Healthy Habits (Exercise, Learning, Journaling, Healthy Eating)
 * Physical Goods (beautiful things to own)
+
+### Home Screen Categories
+
+* Play & Braingames
+* Sing (karaoke & regular songs)
+* Learn
+* Laugh
+* Meditate
+* Exercise
+* Unwind
+* Social Bonding
+* Shop
+* Write / Journal
+
+### Screensaver Ideas
+
+* Sleepy Cat
+* Sleepy Dog
+* Puppies
+* Kittens
+* Model Couple strolling on the beach
+
+------------------
+
+## Design Considerations
+
+* Smart+Dart (or some other very fast) web application framework
+* Redis + Postgres
+* Elasticsearch
+* JS API for developers to account for 
+* Sign in to services like amazon & netflix & spotify & pandora
+
+## Random Thoughts
+
+* Signed About Screen with sigs of all developers
+* Pair up controllers
+* 
