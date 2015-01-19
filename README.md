@@ -72,5 +72,6 @@
 * Will.I.Am has like 15 ios devices to make music on some sort of contraption, his friends with only single phones, feeling left out
 * Chesley Sullenberger (pilot) flying in a private plane, playing the guitar (wisest song possible) with flight attendants doting on him.
 * Oprah with Gail reading books or watching documentaries.
+* Rick Bayless virtually hiking the Incan trail with his friends, and trying to smell the monitor.
 * Final scene: 3 boxes covered in black cloth, each with a price tag over them.
 * Final line: "Come by any time." with kickstarter options and an arrow
