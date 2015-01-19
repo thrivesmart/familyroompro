@@ -57,4 +57,10 @@
 * Controllers can be metamorphic, driven by developers (since there are no physical buttons, it has a mic, touch, etc)
 * Auto-tune for karaoke with phone mic.
 
+## Hardware Models
+
+* Lounge Starter
+* Lounge GFX (good graphics card)
+* Lounge Base (large harddrive)
+* Lounge Ultanium
 
