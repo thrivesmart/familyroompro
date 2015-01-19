@@ -63,6 +63,7 @@
 * Lounge GFX (good graphics card)
 * Lounge Base (large harddrive)
 * Lounge Ultanium
+* Lounge Sensorsweep (3d camera & positional sensor)
 
 ## Kickstarter Video
 
@@ -73,6 +74,6 @@
 * Chesley Sullenberger (pilot) flying in a private plane, playing the guitar (wisest song possible) with flight attendants doting on him.
 * Oprah with Gail reading books or watching documentaries.
 * Rick Bayless virtually hiking the Incan trail with his friends, and trying to smell the monitor.
-* Bill Gates and Warren Buffet Playing Bridge.
+* Mark Zuckerberg learning chinese.  Warren Buffett's screename keeps popping up asking to play bridge.  Mark says "who the heck is this guy wanting to play bridge all the time?"
 * Final scene: 3 boxes covered in black cloth, each with a price tag over them.
 * Final line: "Come by any time." with kickstarter options and an arrow
