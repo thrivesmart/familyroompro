@@ -52,6 +52,8 @@
 
 ## Random Thoughts
 
+* Must be 4k enabled.
+* Unsure about 3D.
 * Signed About Screen with sigs of all developers
 * Pair up controllers
 * Controllers can be metamorphic, driven by developers (since there are no physical buttons, it has a mic, touch, etc)
