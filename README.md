@@ -70,9 +70,10 @@
 * A story of a whole bunch of amazing families having fun, all around the world
 * Joe Montana throwing his iphone into his TV accidently, and his family facepalming, and Jennifer laughing
 * Patrick Stewart and Wil Wheaton playing star trek online, wil in the captain's chair, looking back at "Sir Patrick Stewart" saying he's not the captain anymore.  Pan to Levar reading a book by the fire, cozied up with a blanket or pet.  Patrick thinks his phone is a ST1 communicator.
-* Will.I.Am has like 15 ios devices to make music on some sort of contraption, his friends with only single phones, feeling left out
+* Chris from Coldplay sings bridge over troubled water with Paul Simon and possibly garfunkel.  auto tuned.
 * Chesley Sullenberger (pilot) flying in a private plane, playing the guitar (wisest song possible) with flight attendants doting on him.
-* Oprah with Gail reading books or watching documentaries.
+* dr Phil, oz, and Rachel Ray playing an Oprah game
+* Clinton and bush playing charades, al gore is the subject, but also present
 * Rick Bayless virtually hiking the Incan trail with his friends, and trying to smell the monitor.
 * Mark Zuckerberg learning chinese.  Warren Buffett's screename keeps popping up asking to play bridge.  Mark says "who the heck is this guy wanting to play bridge all the time?"
 * Final scene: 3 boxes covered in black cloth, each with a price tag over them.
