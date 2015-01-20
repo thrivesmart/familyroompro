@@ -62,7 +62,7 @@
 ## Hardware Models
 
 * Lounge Starter
-* Lounge GFX (good graphics card)
+* Lounge GFX (crazy-good 3D graphics card)
 * Lounge Base (large harddrive)
 * Lounge Ultanium
 * Lounge Sensorsweep (3d camera & positional sensor)
