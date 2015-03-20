@@ -117,6 +117,12 @@ sudo apt-get upgrade
 sudo apt-get dist-upgrade
 </code>
 
+## Install NVIDIA Drivers
+
+<code>
+sudo apt-get install nvidia-331
+</code>
+
 ## Install Desktop (GNOME)
 
 <code>
