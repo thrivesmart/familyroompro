@@ -123,10 +123,10 @@ sudo apt-get dist-upgrade
 sudo apt-get install nvidia-331
 </code>
 
-## Install Desktop (GNOME)
+## Install Desktop (xfce4)
 
 <code>
-sudo apt-get install ubuntu-desktop
+sudo apt-get install xubuntu-desktop
 </code>
 
 
