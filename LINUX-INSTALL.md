@@ -132,5 +132,5 @@ sudo apt-get install xubuntu-desktop
 
 ## Install Chrome
 
-From a USB Stick?  From the web?
+Just search it in Firefox.
 
