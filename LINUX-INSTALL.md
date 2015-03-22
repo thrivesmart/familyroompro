@@ -116,9 +116,9 @@ sudo nano /etc/network/interfaces
 Add
 
 <code>
-auto wlan0
-iface wlan0 inet dhcp
-wpa-ssid <your_router>
+auto wlan0<br>
+iface wlan0 inet dhcp<br><br>
+wpa-ssid <your_router><br>
 wpa-psk <your_wpa_key>
 </code>
 
