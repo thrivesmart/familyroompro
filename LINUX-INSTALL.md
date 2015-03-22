@@ -67,10 +67,10 @@ nano /etc/default/grub
 
 Add `nomodeset` to `GRUB_CMDLINE_LINUX_DEFAULT=""` and `GRUB_CMDLINE_LINUX=""` lines, e.g.
 
-<code>
+```
 GRUB_CMDLINE_LINUX_DEFAULT="nomodeset"
 GRUB_CMDLINE_LINUX="nomodeset"
-</code>
+```
 
 Then run `update-grub` to tell grub to use these options.
 
@@ -89,15 +89,15 @@ http://serverfault.com/questions/546079/ubuntu-server-hanging-on-adding-swap
 
 Edit GAI config (?): open `/etc/gai.conf`
 
-<code>
+```
 nano /etc/gai.conf
-</code>
+```
 
 change line ~54 to *uncomment* out the following:
 
-<code>
+```
 precedence ::ffff:0:0/96  100
-</code>
+```
 
 (`ctrl-o` and then `ctrl-x` to save and quit)
 
@@ -109,50 +109,47 @@ reboot or sudo reboot.
 
 ## Setup Wifi
 
-<code>
+```
 sudo nano /etc/network/interfaces
-</code>
+```
 
 Add
 
-<code>
+```
 auto wlan0
-
 iface wlan0 inet dhcp
 
 wpa-ssid &lt;your_router&gt;
-
-
 wpa-psk &lt;your_wpa_key&gt;
-</code>
+```
 
 Run
 
-<code>
+```
 sudo ifup -v wlan0
-</code>
+```
 
 ## Update OS
 
 Do the following:
 
-<code>
+```
 sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get dist-upgrade
-</code>
+```
 
 ## Install NVIDIA Drivers
 
-<code>
+```
 sudo apt-get install nvidia-331
-</code>
+```
 
 ## Install Desktop (xfce4)
 
-<code>
+```
 sudo apt-get install xubuntu-desktop
-</code>
+```
 
 
 ## Install Chrome
