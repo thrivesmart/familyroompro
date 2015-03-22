@@ -116,10 +116,14 @@ sudo nano /etc/network/interfaces
 Add
 
 <code>
-auto wlan0<br>
-iface wlan0 inet dhcp<br><br>
-wpa-ssid <your_router><br>
-wpa-psk <your_wpa_key>
+auto wlan0
+
+iface wlan0 inet dhcp
+
+wpa-ssid &lt;your_router&gt;
+
+
+wpa-psk &lt;your_wpa_key&gt;
 </code>
 
 Run
