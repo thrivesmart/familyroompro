@@ -107,6 +107,27 @@ References: http://askubuntu.com/questions/574569/apt-get-stuck-at-0-connecting-
 
 reboot or sudo reboot.
 
+## Setup Wifi
+
+<code>
+sudo nano /etc/network/interfaces
+</code>
+
+Add
+
+<code>
+auto wlan0
+iface wlan0 inet dhcp
+wpa-ssid <your_router>
+wpa-psk <your_wpa_key>
+</code>
+
+Run
+
+<code>
+sudo ifup -v wlan0
+</code>
+
 ## Update OS
 
 Do the following:
