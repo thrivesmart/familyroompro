@@ -2,6 +2,7 @@ package main
 
 import (
 	"database/sql"
+  "encoding/json"
 	"fmt"
   "strings"
 	_ "github.com/lib/pq"
@@ -125,13 +126,34 @@ func yhoo(res http.ResponseWriter, req *http.Request) {
 }
 
 func updates(res http.ResponseWriter, req *http.Request) {
+  var err error
+  
   connector := []string{"user=", DB_USERNAME, " dbname=", DB_DBNAME, " sslmode=", DB_SSLMODE};
   
 	db, err := sql.Open("postgres", strings.Join(connector, ""))
-	if err != nil {
-		http.Error(res, err.Error(), 500)
-	}
+	if err != nil { http.Error(res, err.Error(), 500); return }
+  
+  kind := req.FormValue("kind")
+  js := req.FormValue("json")
 
+  var episode Episode
+  var movie Movie
+  var series Series
+
+  if kind == "episode" {
+    err = json.Unmarshal([]byte(js), &episode)
+  	if err != nil { http.Error(res, err.Error(), 500); return }
+  } else if kind == "movie" {
+    err = json.Unmarshal([]byte(js), &movie)
+  	if err != nil { http.Error(res, err.Error(), 500); return }
+  } else if kind == "series" {
+    err = json.Unmarshal([]byte(js), &series)
+  	if err != nil { http.Error(res, err.Error(), 500); return }
+  } else {
+    http.Error(res, "Missing `kind` parameter.", 422)
+    return
+  }
+  
 	age := 21
 	_, err = db.Query("SELECT title FROM movies WHERE imdbid = $1", age)
 	fmt.Fprintln(res, err)
