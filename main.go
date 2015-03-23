@@ -3,6 +3,7 @@ package main
 import (
 	"database/sql"
 	"fmt"
+  "strings"
 	_ "github.com/lib/pq"
 	"github.com/skratchdot/open-golang/open"
 	"net/http"
@@ -10,14 +11,25 @@ import (
 	"time"
 )
 
+var DB_USERNAME string
+// var DB_PASSWORD string
+var DB_DBNAME string
+var DB_SSLMODE string
+
 func main() {
 	port := os.Getenv("PORT")
-	if port == "" {
-		port = "3000"
-	}
+	if port == "" { port = "3000" }
+	DB_USERNAME = os.Getenv("FRP_DB_USERNAME")
+	if DB_USERNAME == "" { DB_USERNAME = "thrivesmart1" }
+  // DB_PASSWORD = os.Getenv("FRP_DB_PASSWORD")
+	DB_DBNAME = os.Getenv("FRP_DB_DBNAME")
+	if DB_DBNAME == "" { DB_DBNAME = "frp" }
+	DB_SSLMODE = os.Getenv("FRP_DB_SSLMODE")
+	if DB_SSLMODE == "" { DB_SSLMODE = "disable" }
+  
 	http.HandleFunc("/", hello)
 	http.HandleFunc("/yahoo", yhoo)
-	http.HandleFunc("/crawl-result", crawled)
+	http.HandleFunc("/update-library", updates)
 	fmt.Println("listening on port " + port + "...")
 	err := http.ListenAndServe(":"+port, nil)
 	if err != nil {
@@ -112,10 +124,12 @@ func yhoo(res http.ResponseWriter, req *http.Request) {
 	open.RunWith("http://www.yahoo.com/", "safari")
 }
 
-func crawled(res http.ResponseWriter, req *http.Request) {
-	db, err := sql.Open("postgres", "user=thrivesmart1 dbname=frp sslmode=disable")
+func updates(res http.ResponseWriter, req *http.Request) {
+  connector := []string{"user=", DB_USERNAME, " dbname=", DB_DBNAME, " sslmode=", DB_SSLMODE};
+  
+	db, err := sql.Open("postgres", strings.Join(connector, ""))
 	if err != nil {
-		fmt.Fprintln(res, err)
+		http.Error(res, err.Error(), 500)
 	}
 
 	age := 21
