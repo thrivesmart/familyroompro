@@ -26,82 +26,82 @@ func main() {
 }
 
 type Episode struct {
-	Id                    int64
-	SeriesId              int64
-	Title                 string
-	Year                  int64
-	Rated                 string
-	Released              time.Time
-	RuntimeMinutes        int64
-	Plot                  string
-	Language              string
-	PosterUrl             string
-	TomameterRating       int64
-	TomameterVoteCount    int64
-	Imdbid                string
-	ImdbRating            int64
-	ImdbVoteCount         int64
-	GenresJson            string
-	DirectorsJson         string
-	WritersJson           string
-	ActorsJson            string
-	CountriesJson         string
-	SubtitleLanguagesJson string
-	StreamingUrlsJson     string
-	CreatedAt             time.Time
-	UpdatedAt             time.Time
+	Id                    int64     `json:"id"`
+	SeriesId              int64     `json:"series_id"`
+	Title                 string    `json:"title"`
+	Year                  int64     `json:"year"`
+	Rated                 string    `json:"rated"`
+	Released              time.Time `json:"released"`
+	RuntimeMinutes        int64     `json:"runtime_minutes"`
+	Plot                  string    `json:"plot"`
+	Language              string    `json:"language"`
+	PosterUrl             string    `json:"poster_url"`
+	TomameterRating       int64     `json:"tomameter_rating"`
+	TomameterVoteCount    int64     `json:"tomameter_vote_count"`
+	Imdbid                string    `json:"imdbid"`
+	ImdbRating            int64     `json:"imdb_rating"`
+	ImdbVoteCount         int64     `json:"imdb_vote_count"`
+	GenresJson            string    `json:"genres_json"`
+	DirectorsJson         string    `json:"directors_json"`
+	WritersJson           string    `json:"writers_json"`
+	ActorsJson            string    `json:"actors_json"`
+	CountriesJson         string    `json:"countries_json"`
+	SubtitleLanguagesJson string    `json:"subtitle_languages_json"`
+	StreamingUrlsJson     string    `json:"streaming_urls_json"`
+	CreatedAt             time.Time `json:"created_at"`
+	UpdatedAt             time.Time `json:"updated_at"`
 }
 
 type Movie struct {
-	Id                    int64
-	Title                 string
-	Year                  int64
-	Rated                 string
-	Released              time.Time
-	RuntimeMinutes        int64
-	Plot                  string
-	Language              string
-	PosterUrl             string
-	TomameterRating       int64
-	TomameterVoteCount    int64
-	Imdbid                string
-	ImdbRating            int64
-	ImdbVoteCount         int64
-	GenresJson            string
-	DirectorsJson         string
-	WritersJson           string
-	ActorsJson            string
-	CountriesJson         string
-	SubtitleLanguagesJson string
-	StreamingUrlsJson     string
-	CreatedAt             time.Time
-	UpdatedAt             time.Time
+	Id                    int64     `json:"id"`
+	Title                 string    `json:"title"`
+	Year                  int64     `json:"year"`
+	Rated                 string    `json:"rated"`
+	Released              time.Time `json:"released"`
+	RuntimeMinutes        int64     `json:"runtime_minutes"`
+	Plot                  string    `json:"plot"`
+	Language              string    `json:"language"`
+	PosterUrl             string    `json:"poster_url"`
+	TomameterRating       int64     `json:"tomameter_rating"`
+	TomameterVoteCount    int64     `json:"tomameter_vote_count"`
+	Imdbid                string    `json:"imdbid"`
+	ImdbRating            int64     `json:"imdb_rating"`
+	ImdbVoteCount         int64     `json:"imdb_vote_count"`
+	GenresJson            string    `json:"genres_json"`
+	DirectorsJson         string    `json:"directors_json"`
+	WritersJson           string    `json:"writers_json"`
+	ActorsJson            string    `json:"actors_json"`
+	CountriesJson         string    `json:"countries_json"`
+	SubtitleLanguagesJson string    `json:"subtitle_languages_json"`
+	StreamingUrlsJson     string    `json:"streaming_urls_json"`
+	CreatedAt             time.Time `json:"created_at"`
+	UpdatedAt             time.Time `json:"updated_at"`
 }
 
 type Series struct {
-	Id                    int64
-	Title                 string
-	StartYear             int64
-	EndYear               int64
-	Rated                 string
-	Released              time.Time
-	Plot                  string
-	Language              string
-	PosterUrl             string
-	TomameterRating       int64
-	TomameterVoteCount    int64
-	Imdbid                string
-	ImdbRating            int64
-	ImdbVoteCount         int64
-	GenresJson            string
-	DirectorsJson         string
-	WritersJson           string
-	ActorsJson            string
-	CountriesJson         string
-	SubtitleLanguagesJson string
-	StreamingUrlsJson     string
-	CreatedAt             time.Time
-	UpdatedAt             time.Time
+	Id                    int64     `json:"id"`
+	Title                 string    `json:"title"`
+	StartYear             int64     `json:"start_year"`
+	EndYear               int64     `json:"end_year"`
+	Rated                 string    `json:"rated"`
+	Released              time.Time `json:"released"`
+	Plot                  string    `json:"plot"`
+	Language              string    `json:"language"`
+	PosterUrl             string    `json:"poster_url"`
+	TomameterRating       int64     `json:"tomameter_rating"`
+	TomameterVoteCount    int64     `json:"tomameter_vote_count"`
+	Imdbid                string    `json:"imdbid"`
+	ImdbRating            int64     `json:"imdb_rating"`
+	ImdbVoteCount         int64     `json:"imdb_vote_count"`
+	GenresJson            string    `json:"genres_json"`
+	DirectorsJson         string    `json:"directors_json"`
+	WritersJson           string    `json:"writers_json"`
+	ActorsJson            string    `json:"actors_json"`
+	CountriesJson         string    `json:"countries_json"`
+	SubtitleLanguagesJson string    `json:"subtitle_languages_json"`
+	StreamingUrlsJson     string    `json:"streaming_urls_json"`
+	CreatedAt             time.Time `json:"created_at"`
+	UpdatedAt             time.Time `json:"updated_at"`
 }
 
 func hello(res http.ResponseWriter, req *http.Request) {
